@@ -28,10 +28,14 @@ class Task {
 	}
 }
 
-$task = new Task('Go to the store'); // a new task object
+$tasks = [
 
-$task->complete(); // complete the task
+	new Task('Go to the store'),
+	new Task('Finish my screencast'),
+	new Task('Clean my room')
 
-var_dump($task -> isComplete()); // Show if the task is complete
+];
+
+dd($tasks);
 
 ?>
