@@ -1,6 +1,6 @@
 <?php
 
-
+require 'functions.php';
 
 
 class Task {
@@ -30,16 +30,12 @@ class Task {
 
 $tasks = [
 
-
 	new Task('Go to the store'),
 	new Task('Finish my screencast'),
 	new Task('Clean my room')
 
 ];
 
-
-
-require 'index.view.php'
-
+dd($tasks);
 
 ?>

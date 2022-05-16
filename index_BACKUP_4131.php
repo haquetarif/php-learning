@@ -29,7 +29,7 @@ class Task {
 }
 
 $tasks = [
-
+<<<<<<< HEAD
 
 	new Task('Go to the store'),
 	new Task('Finish my screencast'),
@@ -37,9 +37,14 @@ $tasks = [
 
 ];
 
-
+dd($tasks);
+=======
+	new Task('Go to the store'),
+	new Task('Finish my screencast'),
+	new Task('clean my room')
+];
 
 require 'index.view.php'
-
+>>>>>>> classes
 
 ?>
