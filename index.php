@@ -5,7 +5,7 @@
 
 class Task {
 
-	protected $description;
+	public $description;
 
 	protected $completed = false;
 

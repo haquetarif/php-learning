@@ -6,25 +6,22 @@
 	
 	<title>Document</title>
 	
-	<style>
-		header {
-			background: #e3e3e3;
-			padding: 2em;
-			text-align: center;
-		}
-	</style>
-
+	
 </head>
 
 <body>
+
 	<ul>
 		<?php foreach ($tasks as $task) : ?>
-			<li><?= $task->description; ?></li>
 
-		<?php endofeach; ?>
+		<li> <?= $task->description; ?> </li>
+
+	<?php endforeach; ?>
+
 	</ul>
 
 
 
 </body>
+
 </html>
