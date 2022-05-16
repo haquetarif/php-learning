@@ -17,18 +17,14 @@
 		<li>
 			<?php if ($task->completed) : ?>
 
-			<strike> 
+				<strike> <?= $task->description; ?> </strike>
 
-			<?php endif; ?>
+			<?php else : ?>
 
+				<?= $task->description; ?>
 
-			<?= $task->description; ?> 
+		<?php endif; ?>
 
-			<?php if ($task->completed) : ?>
-
-			</strike> 
-
-			<?php endif; ?>
 
 		</li>
 
