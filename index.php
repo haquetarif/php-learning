@@ -7,7 +7,7 @@ class Task {
 
 	public $description;
 
-	protected $completed = false;
+	public $completed = false;
 
 
 
@@ -36,6 +36,8 @@ $tasks = [
 	new Task('Clean my room')
 
 ];
+
+$tasks[0]->complete();
 
 
 
