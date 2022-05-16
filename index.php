@@ -1,6 +1,6 @@
 <?php
 
-require 'functions.php';
+
 
 
 class Task {
@@ -28,10 +28,12 @@ class Task {
 	}
 }
 
-$task = new Task('Go to the store'); // a new task object
+$tasks = [
+	new Task('Go to the store'),
+	new Task('Finish my screencast'),
+	new Task('clean my room')
+];
 
-$task->complete(); // complete the task
-
-var_dump($task -> isComplete()); // Show if the task is complete
+require 'index.view.php'
 
 ?>
