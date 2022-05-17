@@ -1,7 +1,7 @@
 <?php
 
 
-
+require 'Task.php';
 
 try {
 
@@ -19,15 +19,15 @@ $statement->execute();
 
 
 
-$results = $statement->fetchAll(PDO::FETCH_OBJ);
-
-var_dump($results[1]->description);
+$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
 
 
+var_dump($tasks[0]->foobar());
 
 
 
-// require 'index.view.php';
+
+require 'index.view.php';
 
 
 
