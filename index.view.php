@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>Document</title>
+	<title>Laracasts PHP Practitioner</title>
 	
 	
 </head>
