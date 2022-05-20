@@ -1,31 +1,26 @@
 <?php
 
 
-require 'database/Connection.php';
+$query = require 'bootstrap.php';
 
-require 'database/QueryBuilder.php';
-
-// require 'Task.php';
+require 'Task.php';
 
 
 
-$pdo = Connection::make(); /* mySQL connection is made with 
+$tasks = $query->selectAll('todos', 'Task'); /* New "tasks" 
 
-the static function "make()" from the Connection.php file */
+object is createdby fetching data from the 'todos' table 
 
+of the mytodo database */
 
-
-$query = new QueryBuilder($pdo); /* New "query" object is created 
-
-based on the QueryBuilder class from the PHP file with the same name */
+?>
 
 
-
-$tasks = $query->selectAll('todos'); /* New "tasks" object is created
-
-by fetching data from the 'todos' table of the mytodo database */
+<pre><?php die(var_dump($tasks)); ?></pre>
 
 
+
+<?php 
 
 require 'index.view.php';
 
