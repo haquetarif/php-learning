@@ -7,7 +7,7 @@ require 'Task.php';
 
 
 
-$tasks = $query->selectAll('todos', 'Task'); /* New "tasks" 
+$tasks = $query->selectAll('todos'); /* New "tasks" 
 
 object is createdby fetching data from the 'todos' table 
 

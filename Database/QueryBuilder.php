@@ -16,7 +16,7 @@ class QueryBuilder
 
 	}
 
-	public function selectAll($table, $intoClass)
+	public function selectAll($table)
 	
 	{
 
@@ -31,7 +31,7 @@ class QueryBuilder
 
 
 	return 
-	$statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
+	$statement->fetchAll(PDO::FETCH_CLASS);
 
 
 	}
