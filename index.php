@@ -11,16 +11,9 @@ $tasks = $query->selectAll('todos'); /* New "tasks"
 
 object is createdby fetching data from the 'todos' table 
 
-of the mytodo database */
-
-?>
+of the mytodo database  <?php die(var_dump($tasks)); Var dumping to see the class name */
 
 
-<pre><?php die(var_dump($tasks)); ?></pre>
-
-
-
-<?php 
 
 require 'index.view.php';
 
