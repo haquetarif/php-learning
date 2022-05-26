@@ -3,7 +3,11 @@
 
 $query = require 'bootstrap.php';
 
-require 'Task.php';
+
+/* require 'Task.php'; only needed if we make fetch the
+data from database to a Task object. Not needed if we
+are using the standard*/
+
 
 
 
