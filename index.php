@@ -1,7 +1,7 @@
 <?php
 
 
-$query = require 'bootstrap.php';
+$database = require 'bootstrap.php';
 
 
 /* require 'Task.php'; only needed if we make fetch the
@@ -11,7 +11,7 @@ are using the standard*/
 
 
 
-$tasks = $query->selectAll('todos'); /* New "tasks" 
+$tasks = $database->selectAll('todos'); /* New "tasks" 
 
 object is createdby fetching data from the 'todos' table 
 
