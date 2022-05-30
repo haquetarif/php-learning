@@ -1,10 +1,16 @@
 <?php
 
-require 'database/Connection.php';
 
-require 'database/QueryBuilder.php';
+
+require 'core/Router.php';
 
 $config = require 'config.php';
+
+require 'core/database/Connection.php';
+
+require 'core/database/QueryBuilder.php';
+
+
 
 
 /* $pdo = Connection::make(); mySQL connection is made 
@@ -16,7 +22,11 @@ QueryBuilder*/
 
 
 
-return new QueryBuilder(Connection::make($config['database'])); /* New "query" object is 
+return new QueryBuilder(
+
+Connection::make($config['database'])
+
+); /* New "query" object is 
 
 created based on the QueryBuilder class from the PHP file 
 
