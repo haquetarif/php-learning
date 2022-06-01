@@ -1,8 +1,10 @@
 <?php
 
+$app = [];
 
 
-$config = require 'config.php';
+
+$app['config'] = require 'config.php';
 
 
 
@@ -26,9 +28,9 @@ QueryBuilder*/
 
 
 
-return new QueryBuilder(
+$app['database'] = new QueryBuilder(
 
-Connection::make($config['database'])
+Connection::make($app['config']['database'])
 
 ); /* New "query" object is 
 

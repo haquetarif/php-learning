@@ -2,7 +2,7 @@
 
 
 
-$database = require 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
 /*
  // require 'Task.php'; only needed if we make fetch the
@@ -23,6 +23,8 @@ require $router->direct($uri);
 
 */
 
+
+// die(var_dump($app));
 
 
 require Router::load('routes.php')
