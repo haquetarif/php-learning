@@ -3,7 +3,7 @@
 class Router
 
 {
-	protected $router =[];
+	protected $routes =[];
 
 	/* function _construct($router) 
 
@@ -17,6 +17,17 @@ class Router
 	{
 		$this->routes = $routes;
 	} */
+
+	public static function load($file)
+
+	{
+
+		$router = new static;
+
+		require $file;
+
+		return $router;
+	}
 
 	public function define($routes)
 
@@ -32,7 +43,7 @@ class Router
 
 		{
 
-			return $this->routes['about/culture'];
+			return $this->routes[$uri];
 
 		}
 	
