@@ -1,48 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require('partials/head.php'); ?>
 
-<head>
-	<meta charset="utf-8">
 	
-	<title>Laracasts PHP Practitioner</title>
-	
-	
-</head>
 
-<body>
+<h1>My Tasks</h1>
+	<?php foreach ($tasks as $task) : ?>
+<ul>
 
-	<nav>
-		<ul>
-			<li><a href="/about.php">About Page</a></li>
-			<li><a href="/contact.php">Contact Page</a></li>
-		</ul>
-	</nav>
+	<li>
+		<?php if ($task->completed) : ?>
 
-	<ul>
+			<strike> <?= $task->description; ?> </strike>
 
-	<h1>My Tasks</h1>
-		<?php foreach ($tasks as $task) : ?>
+		<?php else : ?>
 
-		<li>
-			<?php if ($task->completed) : ?>
+			<?= $task->description; ?>
 
-				<strike> <?= $task->description; ?> </strike>
-
-			<?php else : ?>
-
-				<?= $task->description; ?>
-
-		<?php endif; ?>
+	<?php endif; ?>
 
 
-		</li>
-
-	<?php endforeach; ?>
-
+	</li>
 	</ul>
 
+<?php endforeach; ?>
 
 
-</body>
 
-</html>
+<?php require('partials/footer.php'); ?>
+
+

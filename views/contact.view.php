@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require('partials/head.php'); ?>
 
-<head>
-	<meta charset="utf-8">
-	
-	<title>Contact</title>
-	
-	
-</head>
-
-<body>
 
 	<h1>Contact Us</h1>
 
@@ -17,6 +7,4 @@
 
 
 
-</body>
-
-</html>
+<?php require('partials/footer.php'); ?>
